@@ -1,0 +1,35 @@
+
+
+Q. Why 67 Companies of India? Why not more or less?
+A. 
+To reduce dimensionality. Please find elaboration below : 
+
+1. According to a recent survey by McKinsey, average life span of companies  was 61 years, now it's down to 18 years. (http://www.forbesindia.com/article/imd-business-school/why-you-will-probably-live-longer-than-most-big-companies/45487/1).
+   According to Prof. Richard Foster Yale Univ., it was 15 years as of 18, Jan. 2017. (https://www.bbc.com/news/business-16611040)
+  Hence, we take 16 years of data.
+2. The NYSE and NASDAQ average about 253 trading days a year. This is from 365.25(days on average per year) * 5/7(proportion work days per week) = 260.89 - 6(weekday holidays) - 3*5/7(fixed date holidays) = 252.75 ~ 253. (Wikipedia)
+    251 according to this : https://tradingsim.com/blog/trading-days-in-a-year/#Number_of_Trading_Days_in_2014
+	
+3. That means 4048 trading days, also, each day corresponds to a single data point. Hence we can have around 4048 data points. Square rooting that, we get 63.49 ~ 63 companies for avoiding dimensionality,  for 3 countries (India, Japan and USA) 63*3 = 189.
+    Rounding it off and adding 11 companies, we make a list of 200 companies of all 3 countries as our dataset to finally form  66 prominent companies of India and 67 companies for both Japan and USA.
+ 3.1 Selection of these companies of India, Japan and USA includes companies listed in but is not limited to the following resources : 
+                  1. https://en.wikipedia.org/wiki/List_of_largest_manufacturing_companies_by_revenue (largest manufacturing companies.)
+   	2. https://en.wikipedia.org/wiki/List_of_companies_of_India (Companies of India sorted by decreasing revenue).
+   	3. https://en.wikipedia.org/wiki/List_of_companies_of_Japan (Companies of Japan sorted by decreasing revenue).
+   	4. https://www.cbsnews.com/news/fortune-500-revealed-2017-list-revenue-largest-corporations/ (Largest Companies of USA by revenue.)
+
+4. Another reason for taking 16 years of data : 
+In 2001, stock prices took a sharp downturn (some say "stock market crash" or "the Internet bubble bursting") in stock markets across the United States, Canada, Asia, and Europe. 
+After recovering from lows reached following the September 11 attacks, indices slid steadily starting in March 200
+2, with dramatic declines in July and September 
+leading to lows last reached in 1997 and 1998. The U.S. dollar declined steadily against the euro, reaching a 1-to-1 valuation not seen since the euro's introduction.
+
+5. Also, 67-66 companies is a special majority (2/3rd of the whole, a concept used in Indian Parliament), to represent a majority of the best companies out of 100 of a country. 
+   
+  There are many examples where, when a country's best companies by revenue are listed, first 100 are listed only. such examples are given below : 
+   Eg. 1. https://www.moneycontrol.com/stocks/marketinfo/netsales/bse/index.html
+         2. http://siblisresearch.com/data/largest-japanese-companies/
+
+
+
+

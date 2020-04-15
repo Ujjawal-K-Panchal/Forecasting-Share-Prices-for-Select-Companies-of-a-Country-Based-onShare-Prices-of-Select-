@@ -1,0 +1,44 @@
+----------------------------
+Symbols and their meanings: |
+* = Work in Progress.	    |
+? = Query.		    |
+// =  comment		    |
+; = work completed.	    |
+----------------------------
+
+ENTRY FORMAT : <Symbol> DATE - DAY - JOB DONE			    
+
+ENTRIES:
+
+; 29.05.2018 - Day 3 - Deciding the Problem Statement , Gathering Raw data , Deciding hypothetical view of the final dataset , Making the directory.
+
+; 30.05.2018 - Day 4 - Gathering Raw Dataset , Writing an R Script for data preprocessing , Preprocessing data using R and Excel, Uploading the complete repository.
+
+; 31.05.2018 - Day 5 - Collected 66 Companies for INDIA RAW data, 10 Companies for Japan added. (Out of the 200 Companies for all 3. Therefore 66 per country. 3 companies extra will be provided later.)
+		Changes are visible in the Unprocessed Data for India. 
+
+; 1.06.2018 - Day 6 - 46 Companies Added for Japan. Adding more. The files will be updated once the job is completed.
+
+; 2.06.2018 - Day 7 - Preprocessing for India's Companies (the chosen 66) is completed. Japan total is currently 47 Companies in Database.
+
+; 3.06.2018 - Day 8 - All Companies for Japan have been collected and preprocessing is done.
+
+; 4.06.2018 - Day 9 - Started Collecting US's Companies Raw Data.
+
+; 5.06.2018 - Day 10 - Collected and preprocessed all data for 67 companies of USA.	
+										
+; 6.06.2018 - Day 11 - Merged all available data for all 3 countries in their seperate .CSV files.
+
+; 7.06.2018 - Day 12 - Merged the seperate .CSV files and concatenated them.
+
+; 8.06.2018 - Day 13 - Model Hypothesis formation.
+
+; 9.06.2018 - Day 14 - Initial Modelling, submited modelling results, model formation for all 66 companies.
+
+; 10.06.2018 - Day 15 - Plotting Visualization for results, error calculation, mean error calculation, mean model accuracy calculation. Final Result Submission.
+ 
+; 11.06.2018 - Day 16 - Documentation
+
+; 12.06.2018 - Day 17 - Documentation, google form to .csv through python script
+
+; 13.06.2018 - Day 18 - SVR training, visualization, error calculation, mean error calculation, mean model accuracy calculation.

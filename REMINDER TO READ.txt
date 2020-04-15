@@ -1,0 +1,14 @@
+This file contains sources I believe are required to refer for solution of some doubts:-
+https://towardsdatascience.com/regression-models-with-multiple-target-variables-8baa75aacd (How to do the regression for 66 companies of India together. This is called multi target regression.)
+
+
+[–]Gobblie 2 points 3 years ago 
+Correlation coefficient 0.2055 implies 20.55% of the variance in your data is explained by your model. Look up R2 for more. A low value isn't bad if it truly is the best model available.
+
+Mean absolute error is the average distance the models predictions are from the actual data points. Absolute in the title indicates that predictions below data points ate not treated as negative distances.
+
+Root mean squared error is a different way of calculating the mean absolute error
+
+The next two lines scale the error to the mean. This lets you compare between models constructed with larger/smaller valued data.
+
+The last line is the number of data points in the data set.

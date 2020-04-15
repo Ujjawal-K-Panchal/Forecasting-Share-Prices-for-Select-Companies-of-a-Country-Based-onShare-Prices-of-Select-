@@ -1,0 +1,11 @@
+As a source and criteria for selecting companies, I've taken companies from the wikipedia list of : List of largest manufacturing companies by revenue
+For the countries India, Japan , USA.
+
+The Companies selected from Japan are : Mitsui , Hitachi , Nissan and several others which will be added as progress is made. (Source : performance.morningstar.com)
+
+The Companies selected from United States of America are : IBM , General Electric , FORD and several others which will be added as progress is made. (Source : performance.morningstar.com)
+
+The Companies selected from India are : Tata Motors, Tata Steel, Videocon along with other prominent 63 companies from India. (Source: performance.morningstar.com)
+
+
+

@@ -1,0 +1,37 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Take into account 2 companies of all the three countries, 
+We take each one of them as a different dependent value (endog) and all the other rows as exog. 
+Now, we try to predict each endog with all the other available exogs. If using all the available exogs, we can find the end og with some precision, 
+then we can say that the value in endog is dependent on the values present in exog.
+We start measuring datapoints from year 2000.
+
+Rows: Date (Daily) | Company1(Japan) | Company2(Japan) |...| Company67 (Japan) | Company1(India) | Company2(India) |...| Company66(India) | Company1(USA) | Company2(USA) |...| Company67(USA) |
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Another problem that arises. This problem is to choose which indicator to use for the analysis of the trend.
+For a share value, there are parameters like open, high, low, closing. We choose to use the OHLC average.
+
+OHLC Average = (Open + High + Low + Close) / 4
+
+The default setting for many indicators is to use the close of the time frame as the input data. 
+Changing this to the open, the high or low can dramatically affect how the indicator moves and the analytical insight it provides. 
+The open, high, low and close average (OHLC average) is the average of all these settings combined.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Upon the formation of the final combined dataset, we'll be facing the 'Curse of dimensionality'. This is due to the fact that upon creation of the final
+dataset, we will be left with about 3500 data points and 136 attributes. 
+We know as a rule of thumb that number of datapoints should be atleast = (no. of attributes )^2.
+Here, due to a large featureset, this is not possible.
+
+To deal with this problem, dimensionality reduction techniques will be used in order to integrate the given featureset into a lower number of features 
+while retaining the variance provided by all of 
+the multiple features. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+   
+
+

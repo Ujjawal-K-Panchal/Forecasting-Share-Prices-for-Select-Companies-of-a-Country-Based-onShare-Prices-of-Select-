@@ -1,0 +1,127 @@
+\documentclass[10pt,conference]{IEEEtran}
+% If the IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it:
+% \documentclass[conference]{../sty/IEEEtran}
+
+\begin{document}
+
+% paper title
+\title{ Forecasting Share Prices for Companies of a Country Using Companies of another Country }
+
+% make the title area
+\maketitle
+
+\begin{abstract}
+Stock price performance of companies is of major interest in both financial and academic studies. Performance of companies of a country in share market might indicate to some degree, economic growth of that country. Due to international relations between local companies and multinational corporations and many other international factors, the share market performance of a county’s companies may be dependent on the international factor to an extent. To anlayse the forecasting of share prices of a country, we have collected technical data for 66 companies of India, 67 companies of Japan and 67 companies of United States of America. In this paper, we have implanted random forest algorithm and it is trained on the training-set treating 1 company of India as the criterion variable at a time and all selected companies of Japan and United States of America as the predictor variables. We observed that if the dependence exists, and if it does, how strong it is, by computing the errors such as average of mean squared error, root mean squared error and mean of absolute error.
+\end{abstract}
+
+\section{Introduction}
+There are two main schools of thought in the financial markets, technical analysis and fundamental analysis. Fundamental analysis attempts to determine a stock’s value by focusing on underlying factors that affect a company’s actual business and its prospects. Fundamental analysis can be performed on industries or the economy. Technical analysis, on the other hand, looks at the price movement of a stock and uses this data to predict its future price movements. [1]
+Data collected from source (listed in the data section), contains indicators such as Date, Open, High, Low, Close and Volume. For consistency, we perform analysis on High, Close and OHLC average (average of Open High Low and Close) of the technical data collected. The formula used for calculating OHLC average is shown below.
+
+OHLC Average = (Open + High + Low + Close) / 4	            (1.1)
+
+The default setting for many indicators is to use the close of the time frame as the input data. Changing this to the open, the high or low can dramatically affect how the indicator moves and the analytical insight it provides. The open, high, low and close average (OHLC average) is the average of all these settings combined. [2]
+
+For analysis, we have implemented Random Forest Regression. Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks, that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.[3][4]
+The dataset is randomly shuffled and divided into two separate sub-sets, training-set and test-set. Training set consists of 80% of the dataset, Test set consists of remaining 20% of the dataset. Both training and test sets consists of ?[assumption 1] attribute of each of the company listed in sequential fashion. All the India’s 66 companies are taken as criterion variables one by one, for each of these companies; a Random Forest Regression model is trained. All other variables of Japan and US are simultaneously provided to the model as predictor variables. For training, the training-set is used. For all these 67 companies, after training of the model, predictions are done on the test-set.
+The predicted values for the criterion value are compared with the actual values. Now, using these 2, Mean Absolute Error (MAE), Mean Squared Error (MSE) and Root Mean Squared Error (RMSE) is calculated. ?[assumption 2] is calculated for all the 66 different models. ?[assumption 3] is calculated. If  ? is very small as compared to 50, there is a strong relation between the share market performance of the companies of the countries in question as our model was able to predict criterion variable values that were very close to the actual criterion variable values of the test set on the basis of the values of the predictor variables.
+
+
+\section{Submission and Review Process}
+Papers will be reviewed on the basis of a manuscript of sufficient
+detail to permit reasonable evaluation. The manuscript should {\bf
+not exceed {\bf SIX} double-column pages, with single line spacing, main
+text font size no smaller than 10 points, and at least 0.5 inch
+margins}. The deadline for submission is {\bf Saturday, Sep. 15, 2018}, with notification of decisions by {\bf Friday, Nov. 30, 2018}. The deadline for the final camera-ready paper is {\bf Sunday, Dec. 30, 2018}. 
+Final manuscript guidelines will be made available after the notification of decisions.
+
+
+{\bf{Important Note:}} 
+All submitted papers will be judged based on their quality and relevance through {\bf double-blind reviewing}, where the identities of the authors are withheld from the reviewers. As an author, you are required to preserve the anonymity of your submission, while at the same time allowing the reader to fully grasp the context of related past work, including your own. Common sense and careful writing will go a long way towards preserving anonymity. Papers that do not conform with our double-blind submission policies will be rejected without review.
+
+Note that, with double blind submissions and reviews, the only way the TPC Chairs will know the authors of a paper is if {\bf all authors are listed in the EDAS portal,} as this information is not available in the PDF. Therefore, it is very important to include all authors in the EDAS portal. To do this, after registering the title, abstract and topics for the paper on EDAS, in the second page, you MUST add all authors who contributed to the paper. {\bf The TPC Chairs will not be able to add authors after paper acceptance.} 
+
+%\section{Proceedings}
+%All the accepted papers will be published in a conference
+%proceeding. All the registrants at the conference will receive a
+%copy of the proceedings.
+
+\section{Preparation of the Paper}
+Only electronic submissions in the form of a Postscript (PS) or Portable
+Document Format (PDF) file will be accepted. Most authors will
+prepare their papers with \LaTeX. The \LaTeX\ style file
+(\verb#IEEEtran.cls#) and the \LaTeX\ source
+(\verb#ncc2019_example.tex#) that produced this page may be
+downloaded from the NCC 2019 web site
+(http://ece.iisc.ernet.in/$\sim$ncc2019). Do not change the style file
+in any way. 
+Authors using other means to prepare their manuscripts
+should attempt to duplicate the style of this example as closely as
+possible.
+
+The style of references, 
+e.g.,
+\cite{Shannon1948},\cite{Kalman1960},\cite{Rao2008},\cite{Mhatre2009}, 
+equations, figures, tables, etc.,
+should be the same as for the \emph{IEEE Transactions on Information
+Theory}. 
+%The affiliation shown for authors should constitute a
+%sufficient mailing address for persons who wish to write for more
+%details about the paper.
+
+\section{Electronic Submission}
+The paper submission portal is EDAS:
+\begin{itemize}
+\item Communications Track:
+
+{\texttt{https://edas.info/newPaper.php?\\c=25340\&track=92756}}
+
+\item Networks Track:
+
+{\texttt{https://edas.info/newPaper.php?\\c=25340\&track=92757}}
+
+\item Signal Processing Track:
+
+{\texttt{https://edas.info/newPaper.php?\\c=25340\&track=92758}}
+\end{itemize}
+
+For relevant announcements please check the NCC 2019 website
+(http://ece.iisc.ernet.in/$\sim$ncc2019).
+
+\section{Conclusion}
+Conclusions, if any, go here.
+
+% conference papers do not normally have an appendix
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+% optional entry into table of contents (if used)
+%\addcontentsline{toc}{section}{Acknowledgment}
+We thank everyone who helped us. 
+
+\begin{thebibliography}{1}
+
+\bibitem{Shannon1948}
+C.~E.~Shannon, ``A mathematical theory of communication,''
+\emph{Bell Syst.\ Tech.\ J.}, vol.\ 27, pt.~I, pp.~379--423, 1948;
+     pt.~II, pp.~623--656, 1948.
+
+\bibitem{Kalman1960}
+R.~E.~Kalman, ``A new approach to linear filtering and prediction
+problems,'' \emph{Journal of Basic Engineering}, vol.\ 82, no.\ 1,
+pp.~35--45, 1960.
+
+\bibitem{Rao2008}
+K.~S.~Rao, ``Indian Institute of Science Campus: A Botanist's
+Delight,'' Bangalore: IISc Press, 2008.
+
+\bibitem{Mhatre2009}
+N.~Mhatre, ``Secret Lives: Biodiversity of the Indian Institute of
+Science Campus,'' Bangalore: IISc Press, 2009.
+
+\end{thebibliography}
+
+
+\end{document}
+
